@@ -145,62 +145,15 @@ CONTENT CONTAINERS -- UNUSED RIGHT NOW
 	background-color: rgba(255,255,255,0.3);
 }
 ********************************************/
-.bottom-left-diamond {
-	width: 0;
-	height: 0;
-	border: 200px solid transparent;
-	border-bottom-color: rgba(200,200,200,0.3);
-	position: relative;
-	top: -200px;
-	z-index: 2;
-	margin-left: -617px;
-	margin-top: -35px;
-}
-
-.bottom-left-diamond:after {
-	content: '';
-	position: absolute;
-	left: -200px;
-	top: 200px;
-	width: 0;
-	height: 0;
-	border: 200px solid transparent;
-	border-top-color: rgba(200,200,200,0.3);
-}
-
-.bottom-right-diamond {
-	width: 0;
-	height: 0;
-	border: 200px solid transparent;
-	border-bottom-color: rgba(200,200,200,0.3);
-	position: relative;
-	top: -200px;
-	z-index: 2;
-	margin-left: 212px;
-	margin-top: -400px;
-}
-
-.bottom-right-diamond:after {
-	content: '';
-	position: absolute;
-	left: -200px;
-	top: 200px;
-	width: 0;
-	height: 0;
-	border: 200px solid transparent;
-	border-top-color: rgba(200,200,200,0.3);
-}
-
 .top-left-diamond {
 	width: 0;
 	height: 0;
 	border: 200px solid transparent;
 	border-bottom-color: rgba(200,200,200,0.3);
 	position: relative;
-	top: -200px;
 	z-index: 2;
-	margin-left: -831px;
-	margin-top: -617px;
+	top: -450px;
+	right: 820px;
 }
 
 .top-left-diamond:after {
@@ -220,10 +173,9 @@ CONTENT CONTAINERS -- UNUSED RIGHT NOW
 	border: 200px solid transparent;
 	border-bottom-color: rgba(200,200,200,0.3);
 	position: relative;
-	top: -200px;
 	z-index: 2;
-	margin-left: 429px;
-	margin-top: -394px;
+	top: -850px;
+	left: 420px;
 }
 
 .top-right-diamond:after {
@@ -236,6 +188,51 @@ CONTENT CONTAINERS -- UNUSED RIGHT NOW
 	border: 200px solid transparent;
 	border-top-color: rgba(200,200,200,0.3);
 	z-index: 1;
+}
+
+
+.bottom-left-diamond {
+	width: 0;
+	height: 0;
+	border: 200px solid transparent;
+	border-bottom-color: rgba(200,200,200,0.3);
+	position: relative;
+	z-index: 2;
+	top: -1032px;
+	right: 610px;
+}
+
+.bottom-left-diamond:after {
+	content: '';
+	position: absolute;
+	left: -200px;
+	top: 200px;
+	width: 0;
+	height: 0;
+	border: 200px solid transparent;
+	border-top-color: rgba(200,200,200,0.3);
+}
+
+.bottom-right-diamond {
+	width: 0;
+	height: 0;
+	border: 200px solid transparent;
+	border-bottom-color: rgba(200,200,200,0.3);
+	position: relative;
+	z-index: 2;
+	top: -1432px;
+	left: 210px;
+}
+
+.bottom-right-diamond:after {
+	content: '';
+	position: absolute;
+	left: -200px;
+	top: 200px;
+	width: 0;
+	height: 0;
+	border: 200px solid transparent;
+	border-top-color: rgba(200,200,200,0.3);
 }
 
 .content-placement {
@@ -268,4 +265,5 @@ CONTENT CONTAINERS -- UNUSED RIGHT NOW
 
 .newsletter-submit:hover {
 	background: rgba(128,0,106,0.7);
+	cursor: pointer;
 }
