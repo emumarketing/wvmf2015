@@ -11,7 +11,11 @@ body {
 	background-image: url(imgs/bg.png);
 	background-size: cover;
 	color: rgb(255,255,255);
+}
+
+p {
 	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
 }
 
 .wrapper {
@@ -23,6 +27,14 @@ body {
 	display: table-cell;
 	vertical-align: middle;
 	z-index: 4;
+}
+
+.image-wrapper {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 4;
+	width: 400px;
 }
 
 .navigation {
@@ -71,13 +83,17 @@ body {
 	border-top-color: rgba(200,200,200,0.3);
 }
 
-#center-content {
+.center-content {
     position: relative;
     width: 425px;
+    height: 445px;
     top: 165px;
     right: 215px;
     z-index: 2;
+    display: table;
 }
+
+
 
 /**************************
 
