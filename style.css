@@ -37,6 +37,12 @@ p {
 	width: 400px;
 }
 
+/*******************************************
+
+NAVIGATION BAR
+
+*******************************************/
+
 .navigation {
 	width: 730px;
 	margin-left: auto;
@@ -59,6 +65,12 @@ p {
 	color: rgb(255,255,255);
 	border-bottom: 2px solid rgb(255,255,255);
 }
+
+/********************************************
+
+CENTER DIAMOND PLACEMENT AND CENTER DIAMOND CONTENT PLACEMENT
+
+*********************************************/
 
 .center-diamond {
 	margin-top: 20px;
@@ -93,74 +105,20 @@ p {
     display: table;
 }
 
-
-
-/**************************
-
-CONTENT CONTAINERS -- UNUSED RIGHT NOW
-
-**************************
-.center-content-placement {
+.image {
 	position: relative;
-	z-index: -2;
-	float:left;
-	margin-top: 20px;
-	margin-left:-400px;
-	left: 50%;
-	height: 800px;
-	width: 800px;
-	display: table;
-	background-color: rgba(255,255,255,0.3);
+	z-index: 3;
+	top: -1875px;
+	right:175px;
+	width: 350px;
 }
 
-.bottom-left-content-placement {
-	position: absolute;
-	float: left;
-	margin-left: -220px;
-	margin-top: 420px;
-	height: 400px;
-	width: 400px;
-	z-index: 3;
-	display: table;
-	background-color: rgba(255,255,255,0.3);
-}
+/******************************************
 
-.bottom-right-content-placement {
-	position: absolute;
-	float: left;
-	margin-left: 620px;
-	margin-top: 420px;
-	height: 400px;
-	width: 400px;
-	z-index: 3;
-	display: table;
-	background-color: rgba(255,255,255,0.3);
-}
+DIAMOND PLACEMENT
 
-.top-left-content-placement {
-	position: absolute;
-	float: left;
-	margin-left: -420px;
-	margin-top: 220px;
-	height: 400px;
-	width: 400px;
-	z-index: 3;
-	display: table;
-	background-color: rgba(255,255,255,0.3);
-}
+******************************************/
 
-.top-right-content-placement {
-	position: absolute;
-	float: left;
-	margin-left: 820px;
-	margin-top: 220px;
-	height: 400px;
-	width: 400px;
-	z-index: 3;
-	display: table;
-	background-color: rgba(255,255,255,0.3);
-}
-********************************************/
 .top-left-diamond {
 	width: 0;
 	height: 0;
@@ -250,6 +208,12 @@ CONTENT CONTAINERS -- UNUSED RIGHT NOW
 	border: 200px solid transparent;
 	border-top-color: rgba(200,200,200,0.3);
 }
+
+/*****************************************
+
+DIAMOND CONTENT PLACEMENT
+
+*****************************************/
 
 .content-placement {
 	position: absolute;
