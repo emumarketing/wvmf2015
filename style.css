@@ -1,0 +1,142 @@
+@font-face {
+	font-family: Din_Regular;
+	src: url(din_regular.ttf);
+}
+
+@font-face {
+	font-family: Din_Light;
+	src: url(din_light.ttf);
+}
+
+@font-face {
+  font-family: Din_Medium;
+  src: url(din_medium.ttf);
+}
+
+body, html {
+	overflow: hidden;
+}
+
+body {
+	background-image: url(imgs/background.jpg);
+	background-size: cover;
+}
+
+h1 {
+	font-family: Din_Medium;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+}
+
+h2 {
+	font-family: Din_Medium;
+	text-align: center;
+	color: #fff;
+	bottom: 30px;
+	margin: 0;
+}
+
+a {
+	color: #fff;
+}
+
+/* WILLAMETTE */
+#WILLAMETTE {
+	position: relative;
+	font-size: 80px;
+}
+
+/* VALLEY */
+#VALLEY {
+	position: relative;
+	font-size: 120px;
+	letter-spacing: 12px;
+	bottom: 30px;
+}
+
+/* MUSIC FESTIVAL */
+#MUSIC {
+	position: relative;
+	font-size: 65px;
+	letter-spacing: -1px;
+	bottom: 55px;
+}
+
+/* 2015/MAY9 */
+#MAY {
+	position: relative;
+	font-size: 95px;
+	bottom: 55px;
+}
+
+/* #WVMF */
+#WVMF {
+	position: relative;
+	font-size: 50px;
+	bottom: 55px;
+}
+
+/* LAST YEAR IN PICTURES */
+#PICTURES {
+	position: relative;
+	text-decoration: underline;
+	font-size: 16px;
+	letter-spacing: 3px;
+	bottom: 65px;
+}
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 20px;
+	width: 400px;
+	height: 100px;
+	display: table;
+	color: gray;
+	bottom: 65px;
+}
+
+#mc_embed_signup{
+	border-radius: 20px; 
+	clear:left; 
+	font-family: Din_Regular; 
+	font-size: 16px; 
+	width:200px;
+	display: table-cell;
+	padding-left: 10%;
+	padding-top: 20px;
+}
+
+div #mc_embed_signup_scroll h3 {
+	font-family: Din_Light;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+
+.text-field {
+	height: 20px;
+	width: 60%;
+	border: 1px solid gray;
+	background: #fff;
+	color: gray;
+	font-size: 15px;
+
+}
+
+.button {
+	padding: 10px 15px 11px;
+	font-size: 18px;
+	background-color: gray;
+	font-weight: bold;
+	text-shadow: 1px 1px gray;
+	color: #ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
