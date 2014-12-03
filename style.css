@@ -137,7 +137,6 @@ div #mc_embed_signup_scroll h3 {
 
 #mc_embed_signup div.mce_inline_error {
 	width: 70%;
-	margin: 0;
 }
 
 .text-field {
@@ -151,6 +150,7 @@ div #mc_embed_signup_scroll h3 {
 }
 
 .button {
+	margin: 1em 0 0 0;
 	padding: 10px 15px 11px;
 	font-size: 18px;
 	background-color: gray;
