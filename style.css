@@ -119,12 +119,8 @@ a {
 	padding-top: 20px;
 }
 
-#mc_embed_signup .indicates-required {
-	text-align: left;
-}
-
 #mc_embed_signup .asterisk {
-    color: #808080;;
+    color: #808080;
     font-size: 16px;
 }
 
@@ -135,20 +131,8 @@ div #mc_embed_signup_scroll h3 {
 	margin-bottom: 0px;
 }
 
-#mc_embed_signup .mc-field-group input {
-	width: 60%;
-	padding: 0px;
-	text-indent: 2%;
-}
-
 #mc_embed_signup input {
 	border: 1px solid gray
-}
-
-#mc_embed_signup .mc-field-group .asterisk {
-    position: absolute;
-    top: 0px;
-    right: 0px;
 }
 
 .text-field {
@@ -158,6 +142,7 @@ div #mc_embed_signup_scroll h3 {
 	background: #fff;
 	color: gray;
 	font-size: 15px;
+	display: block;
 
 }
 
