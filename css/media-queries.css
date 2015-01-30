@@ -1,0 +1,7 @@
+/* =================== MENU STYLES =================== */
+/* Places menu items closer together as the screen gets smaller */
+@media only screen and (max-width:950px) {
+    header a {
+        margin: .7em;
+    }
+}

@@ -1,59 +1,227 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>WVMF 2014</title>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="media-queries.css">
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,200' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
 
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-		<script type="text/javascript" src="wvmf2014.js"></script>
+<header>
+    <ul id = "nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#artists-page">Artists</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">Video</a></li>
+        <li><a href="">Schedule</a></li>
+        <li><a href="">F.A.Q.</a></li>
+    </ul>
+</header>
+<body>
+    
+    <!-- ///////////HOME PAGE/////////// -->
+    <section id="home-page">
+    <div align="center" class="diamond-container">
+        <div class="diamond-md" id="date"><div>May 9<br>
+            <span class="subText">FREE ADMISSION</span>
+           </div>
+        </div>
+        <div class="diamond-lg"><div>
+            <span class="willamette">willamette</span>
+            <span class="valley">valley</span>
+            <span class="music">music</span>
+            <span class="festival">festival</span>
+            </div></div>
+        <div class="diamond-md" id="time"><div>12pm <br> to <br> 1am</div></div>
+        
+        <!-- Only appear when screen is smaller than 640px -->
+        <div class="diamond-md" id="date-sm"><div>May 9</div></div>
+        <div class="diamond-md" id="time-sm"><div>12pm to 1am</div></div>
+        <div class="diamond-md" id="admit-sm"><div>Free Admission</div></div>
+    </div>
 
-	</head>
-	<body>
-		<div class="navigation">
-			<a href="#">About</a>
-			<a href="#">Artists</a> 
-			<a href="#">Video</a> 
-			<a href="#">Activities</a> 
-			<a href="#">Social</a> 
-			<a href="#">Directions</a>
-		</div>
+    <div align="center"><img src="images/splitter.png" id="splitter">
+    </div>
+    <div align="center">
+        <div class="diamond-sm"><div><a href=""><i class="fa fa-facebook"></i></a></div></div>
+        <div class="diamond-sm"><div><a href=""><i class="fa fa-twitter"></i></a></div></div>
+        <div class="diamond-sm"><div><a href=""><i class="fa fa-instagram"></i></a></div></div>
+    </div>
+    </section>
+    
+    <!-- ///////////ARTISTS PAGE/////////// -->
+    
+    <section id="artists-page">
 
-		<div class="center-diamond">
-			<img src="imgs/logo-nocompass.png" class="center-content"></img>
-			<div class="top-left-diamond">
-				<div class="content-placement">
-					<span class="wrapper">
-						May 10
-					</span>
-				</div>
-			</div>
-			<div class="top-right-diamond">
-				<div class="content-placement">
-					<span class="wrapper">
-						Free admission
-					</span>
-				</div>
-			</div>
-			<div class="bottom-left-diamond">
-				<div class="content-placement">
-					<span class="wrapper">
-						12pm <br>to<br> 1am
-					</span>
-				</div>
-			</div>
-			<div class="bottom-right-diamond">
-				<div class="content-placement">
-					<span class="wrapper">
-						Subscribe to us!
-						<form>
-							<input type="text" name="email" class="newsletter" />
-							<input type="button" name="register" class="newsletter-submit" value=">" />
-						</form>
-					</span>
-				</div>
-			</div>
-			<img src="imgs/white emblem.png" class="image"></img>
-		</div>
-
-	</body>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li class="active"><a href="#artist1">Artist 1</a></li>
+                <li><a href="#artist2">Artist 2</a></li>
+                <li><a href="#artist3">Artist 3</a></li>
+                <li><a href="#artist4">Artist 4</a></li>
+                <li><a href="#artist5">Artist 5</a></li>
+                <li><a href="#artist6">Artist 6</a></li>
+                <li><a href="#artist7">Artist 7</a></li>
+                <li><a href="#artist8">Artist 8</a></li>
+                <li><a href="#artist9">Artist 9</a></li>
+                <li><a href="#artist10">Artist 10</a></li>
+                <li><a href="#artist11">Artist 11</a></li>
+            </ul>
+        </div>
+        
+        <div class="artist-container">
+            
+            <!-- ...........ARTIST 1........... -->
+            <div id="artist1" class="artist active">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title1</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+            <!-- ...........ARTIST 2........... -->
+            <div id="artist2" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title2</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+            <!-- ...........ARTIST 3........... -->
+            <div id="artist3" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title3</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 4........... -->
+            <div id="artist4" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title4</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 5........... -->
+            <div id="artist5" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title5</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 6........... -->
+            <div id="artist6" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title6</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 7........... -->
+            <div id="artist7" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title7</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 8........... -->
+            <div id="artist8" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title8</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 9........... -->
+            <div id="artist9" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title9</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 10........... -->
+            <div id="artist10" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title10</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 11........... -->
+            <div id="artist11" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title11</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+        </div> <!-- close artist-container -->
+        
+    </section>
+</body>
+    
+<footer><img src="images/mountains.png" id="mountains"></footer>
+<div class="logo-container"><img src="images/logo.png" class="logo"></div>
+    
+<script src="js/javascript.js"></script>
 </html>
