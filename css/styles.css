@@ -1,7 +1,7 @@
 /* =================== BASIC STYLES =================== */
 /* Sets background to fill the entire window */
 html {
-    font-family: georgia;
+    font-family: arial;
     background-color:#f5f5f5;
     background: url("../images/background.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -40,6 +40,22 @@ a:hover {
 }
 
 #artists-page {
+    min-height:100%;
+}
+
+#activities-page {
+    min-height:100%;
+}
+
+#video-page {
+    min-height:100%;
+}
+
+#schedule-page {
+    min-height:100%;
+}
+
+#faq-page {
     min-height:100%;
 }
 
@@ -144,6 +160,7 @@ header ul li a.active {
     vertical-align:middle;
 }
 
+
 /* Large diamond */
 .diamond-lg {
     width: 270px;
@@ -161,8 +178,8 @@ header ul li a.active {
 
 .diamond-lg div {
     position:relative;
-    right:10px;
-    top:10px;
+    right:20px;
+    top:20px;
     height:100%;
     width:100%;
     -ms-transform: rotate(-45deg); /* IE 9 */
@@ -257,21 +274,25 @@ header ul li a.active {
 /* Text logo positioning & sizing */
 .willamette {
     font-size:3em;
+    letter-spacing:.08em;
 }
 
 .valley {
     font-size:5.2em;
-    line-height:.6em;
+    line-height:.4em;
+    letter-spacing:.1em;
 }
 
 .music {
     font-size:6em;
-    line-height:.7em;
+    line-height:.6em;
+    letter-spacing:.09em;
 }
 
 .festival {
     font-size:4.2em;
     line-height:.7em;
+    letter-spacing:.08em;
 }
 
 /* Sets the date, time, and admission for smaller screens. Set to hidden on wide screens. */
@@ -297,11 +318,11 @@ header ul li a.active {
 }
 
 /* Blurb of text below the text logo */
-.subText {
+/*.subText {
     text-align: justify;
     width:70%;
     font-size: .9em;
-}
+}*/
 
 /* =================== ARTISTS PAGE STYLES =================== */
 
@@ -353,7 +374,8 @@ header ul li a.active {
 }
 
 /* Tab/band container */
-.artist-container {
+/* Two classes to differentiate which 'tabs' the jquery is calling */ 
+.artist-container, .activities-container {
     position:relative;
     top:5.3em;
     width:55%;
@@ -379,15 +401,56 @@ header ul li a.active {
     display:block; 
 }
 
-.artist-container img {
+.artist-container img, .activities-container img {
     padding:.5em;
     border:2px solid #ffffff;
     margin-bottom:1em;
-    width:95%;
+    width:100%;
+    box-sizing: border-box;
 }
 
 .artist-links {
     font-size:1.5em;
     text-align:right;
     margin-top:1em;
+}
+
+/* Fontawesome icons within artist/activities containers */
+.artist-links .fa {
+    margin: 0 .5em;
+}
+
+/* For dropdown menu list of artists. For small screens only. */
+.dropdown-container {
+    text-align:center;
+    position:relative;
+    top:4em;
+    width:90%;
+    padding: 0 2em;
+}
+
+#artist-form, #activities-form {
+    width:100%;
+    text-align:right;
+    font-size:1em;
+    display:none;
+    margin-bottom:1em;
+}
+
+
+/* =================== VIDEO PAGE STYLES =================== */
+/* Positions page content */
+#video-page-container {
+    text-align:center;
+    position:relative;
+    top:7em;
+}
+
+.video-container {
+    border:2px solid #ffffff;
+    padding:.5em;
+    display:inline-block;
+}
+
+.window {
 }

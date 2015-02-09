@@ -4,19 +4,20 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="media-queries.css">
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,200' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
 </head>
 
 <header>
     <ul id = "nav">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="#artists-page">Artists</a></li>
-        <li><a href="">Activities</a></li>
-        <li><a href="">Video</a></li>
-        <li><a href="">Schedule</a></li>
-        <li><a href="">F.A.Q.</a></li>
+        <li><a href="#activities-page">Activities</a></li>
+        <li><a href="#video-page">Video</a></li>
+        <li><a href="#schedule-page">Schedule</a></li>
+        <li><a href="#faq-page">F.A.Q.</a></li>
     </ul>
 </header>
 <body>
@@ -53,13 +54,29 @@
     
     <!-- ///////////ARTISTS PAGE/////////// -->
     
-    <section id="artists-page">
+    <section id="artists-page" class="window">
 
-        <div class="sidebar" id="sidebar">
+            <div class="dropdown-container">
+                <select id="artist-form">
+                    <option value="#artist1">Aaron Jackson</option>
+                    <option value="#artist2">Lures</option>
+                    <option value="#artist3">Sugarbeats</option>
+                    <option value="#artist4">artist4</option>
+                    <option value="#artist5">artist5</option>
+                    <option value="#artist6">artist6</option>
+                    <option value="#artist7">artist7</option>
+                    <option value="#artist8">artist8</option>
+                    <option value="#artist9">artist9</option>
+                    <option value="#artist10">artist10</option>
+                    <option value="#artist11">artist11</option>
+                </select>
+            </div>
+        
+        <div class="sidebar" id="artist-sidebar">
             <ul>
-                <li class="active"><a href="#artist1">Artist 1</a></li>
-                <li><a href="#artist2">Artist 2</a></li>
-                <li><a href="#artist3">Artist 3</a></li>
+                <li class="active"><a href="#artist1">Aaron Jackson</a></li>
+                <li><a href="#artist2">Lures</a></li>
+                <li><a href="#artist3">Sugarbeats</a></li>
                 <li><a href="#artist4">Artist 4</a></li>
                 <li><a href="#artist5">Artist 5</a></li>
                 <li><a href="#artist6">Artist 6</a></li>
@@ -72,43 +89,43 @@
         </div>
         
         <div class="artist-container">
-            
+
             <!-- ...........ARTIST 1........... -->
             <div id="artist1" class="artist active">
-            <img src="http://placehold.it/1000x200">
-            <div class="title">Title1</div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <img src="images/aaronjackson.png">
+            <div class="title">Aaron Jackson</div>
+                <p>DJ/Producer, Aaron Jackson, is a force to be reckoned with. He has developed a unique blend of house,uk garage,and wompy club beats to create a signature sound that is guaranteed to get the floor bumpin'. He is quickly rising to the top of his game and separating himself from the herd. Aaron began his journey in the world of vinyl and soon after started producing his own tracks. The world of house music has received his efforts with open arms and open ears.</p>
+
+                <p>Aaron Jackson's music has been signed to record labels such as Party Like Us Records, Hed Kandi Records and Monstercat. He has been nominated by EDM Universal as one of the top 12 rising North American artists. </p>
             <div class="artist-links"> 
-                <a href="">link1</a> 
-                <a href="">link1</a>  
-                <a href="">link1</a>
+                <a href="https://soundcloud.com/aaron_jackson"><i class="fa fa-soundcloud"></i></a> 
+                <a href="https://twitter.com/DJAaronJackson"><i class="fa fa-twitter"></i></a>  
+                <a href="https://www.facebook.com/AaronJacksonmu5ic"><i class="fa fa-facebook-square"></i></a>
             </div>
             </div>
             
             <!-- ...........ARTIST 2........... -->
             <div id="artist2" class="artist">
-            <img src="http://placehold.it/1000x200">
-            <div class="title">Title2</div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <img src="images/lures.png">
+            <div class="title">Lures</div>
+            <p> "dark and surfy like a David Lynch soundtrack." - brooklyn vegan </p>
             <div class="artist-links"> 
-                <a href="">link1</a> 
-                <a href="">link1</a>  
-                <a href="">link1</a>
+                <a href="http://luresmusic.com"><i class="fa fa-home"></i></a>
+                <a href="https://www.facebook.com/pages/Lures/216887315091232"><i class="fa fa-facebook-square"></i></a>   
             </div>
             </div>
             
             <!-- ...........ARTIST 3........... -->
             <div id="artist3" class="artist">
-            <img src="http://placehold.it/1000x200">
-            <div class="title">Title3</div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <img src="images/sugarbeats.png">
+            <div class="title">Sugarbeats</div>
+            <p>Known for their jazzy chords, funky leads, heavy bass, and a healthy dose of traditional instrumentation, the duo SugarBeats... has steadily stepped up the bar in their own brand of Glitch Hop and Future Funk since they launched in 2012. Their newest EP "Groove City Romance" takes it to a whole new level, featuring five different vocalists, two guitarists, one violinist, and a healthy dose of saxophone, as well as production quality rarely matched in the EDM scene. They have rocked stages at some of the biggest sound camps at Burning Man, played festivals such as What The Festival, Kaleidoscope Music Festival, as well as won contests to play the Main Stage at SnowGlobe and Escape from Wonderland with Insomniac Events, respectively.</p>
+                <p>Artists they have shared the stage with include Opiuo, The Glitch Mob, Major Laser, Gramatik, RJD2, The Floozies, Cut Copy, ill.Gates, Pantyraid, Thriftworks, Vibesquad, Love & Light, Snoop Dog, Zion I and many more. After years of experimentation they have finally uncovered a sound that is truly their own, which they continue to perfect and explore with each release as they dive deeper and deeper into collaborations with new vocalists, instrumentalists and producers.</p>
             <div class="artist-links"> 
-                <a href="">link1</a> 
-                <a href="">link1</a>  
-                <a href="">link1</a>
+                <a href="http://www.sugarbeatsmusic.com/"><i class="fa fa-home"></i></a> 
+                <a href="https://www.facebook.com/SugarBeatsMusic?ref=br_rs"><i class="fa fa-facebook-square"></i></a>  
+                <a href="https://soundcloud.com/sugarbeatsmusic"><i class="fa fa-soundcloud"></i></a>
+                <a href="http://www.streetritual.com/"><i class="fa fa-music"></i></a>
             </div>
             </div>
             
@@ -216,8 +233,119 @@
             </div>
             </div>
         </div> <!-- close artist-container -->
+        </section>
+    
+        <!-- ///////////ACTIVITIES PAGE/////////// -->
+    
+        <section id="activities-page" class="window">
         
+            
+            <div class="dropdown-container">
+                <select id="activities-form">
+                    <option value="#artist1">artist1</option>
+                    <option value="#artist2">artist2</option>
+                    <option value="#artist3">artist3</option>
+                    <option value="#artist4">artist4</option>
+                    <option value="#artist5">artist5</option>
+                </select>
+            </div>
+            
+            <div class="sidebar" id="activities-sidebar">
+            <ul>
+                <li class="active"><a href="#artist1">Activity 1</a></li>
+                <li><a href="#artist2">Activity 2</a></li>
+                <li><a href="#artist3">Activity 3</a></li>
+                <li><a href="#artist4">Activity 4</a></li>
+                <li><a href="#artist5">Activity 5</a></li>
+                
+            </ul>
+        </div>
+            
+            <div class="activities-container">
+            <!-- ...........ARTIST 1........... -->
+            <div id="artist1" class="artist active">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title1</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+            <!-- ...........ARTIST 2........... -->
+            <div id="artist2" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title2</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+            <!-- ...........ARTIST 3........... -->
+            <div id="artist3" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title3</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 4........... -->
+            <div id="artist4" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title4</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            
+             <!-- ...........ARTIST 5........... -->
+            <div id="artist5" class="artist">
+            <img src="http://placehold.it/1000x200">
+            <div class="title">Title5</div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
+            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <div class="artist-links"> 
+                <a href="">link1</a> 
+                <a href="">link1</a>  
+                <a href="">link1</a>
+            </div>
+            </div>
+            </div><!-- End artists container -->
+        </section>
+    
+    <section id="video-page">
+        <div id="video-page-container">
+                <div class="video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/5WI9vqsxu7E" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+        </div>
     </section>
+    
+    <section id="schedule-page">
+    schedule page
+    </section>
+    
+    <section id="faq-page">
+    faq page
+    </section>
+    
 </body>
     
 <footer><img src="images/mountains.png" id="mountains"></footer>

@@ -5,7 +5,8 @@ if(img.length > 0){
     function mouse(evt){
         var center_x = (offset.left) + (img.width()/2);
         var center_y = (offset.top) + (img.height()/2);
-        var mouse_x = evt.pageX; var mouse_y = evt.pageY;
+        var mouse_x = evt.clientX; 
+        var mouse_y = evt.clientY;
         var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
         var degree = (radians * (180 / Math.PI) * -1) + 90; 
         img.css('-moz-transform', 'rotate('+degree+'deg)');
@@ -29,15 +30,12 @@ $(window).resize(function(){
 	}
 });
 
-/* Enables tab features for artists & activities pages */
+/* Enables tab features for artists pages */
 jQuery(document).ready(function() {
 
-    jQuery('.sidebar a').on('click', function(e) {
+    jQuery('#artist-sidebar a').on('click', function(e) {
         //get value of tab link
         var currentAttrValue = jQuery(this).attr('href');
-        
-        //show/hide tabs
-        //jQuery('.artist-container ' + currentAttrValue).show().siblings().hide();
         
         jQuery('.artist-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
         
@@ -45,9 +43,54 @@ jQuery(document).ready(function() {
         jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
         
         e.preventDefault();
-        
     });
 });
+
+/* Enables tab features for activities pages */
+jQuery(document).ready(function() {
+
+    jQuery('#activities-sidebar a').on('click', function(e) {
+        //get value of tab link
+        var currentAttrValue = jQuery(this).attr('href');
+        
+        jQuery('.activities-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+        
+        //change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+        
+        e.preventDefault();
+    });
+});
+
+
+/* Enables tab features for artists via dropdown menu */
+jQuery(document).ready(function() {
+
+    jQuery('#artist-form').on('change', function() {
+        //console.log("changed");
+        //get value of tab link
+        var currentAttrValue = $("#artist-form").val();
+        //console.log(currentAttrValue);
+        
+        jQuery('.artist-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+    });
+});
+
+/* Enables tab features for activities via dropdown menu */
+jQuery(document).ready(function() {
+
+    jQuery('#activities-form').on('change', function() {
+        //console.log("changed");
+        //get value of tab link
+        var currentAttrValue = $("#activities-form").val();
+        //console.log(currentAttrValue);
+        
+        jQuery('.activities-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+    });
+});
+
 
 /* Enables smooth scrolling with anchor tags */
 function scrollNav() {

@@ -27,49 +27,22 @@
         padding:.7em;
     }
     
-    /* =================== ARTIST PAGE =================== */
+    /* =================== ARTIST/ACTIVITIES PAGE =================== */
     
-    #artists-page {
-        text-align:center;
-    }
-    
-    .artist-container {
+    .artist-container, .activities-container {
+        width:90%;    
         text-align:left;
     }
     
-    .artist-container img {
-        width:90%; 
-    }
     
-    .sidebar {
-        font-size: 1.4em;
-        width:100%;
-        text-align:center;
-        display:block;
-    }
-    
-    .sidebar ul li {
+    /* Shows dropdown form */
+    #artist-form, #activities-form {
         display:inline-block;
     }
     
-    .sidebar ul li:hover {
-        border-right:0;
-        opacity:1;
-        background-color:#76393d;
-    }
-
-    .sidebar ul li a {
-        color:#ffffff;
-    }
-
-    .sidebar ul li a:hover {
-        color:#ffffff;
-    }
-
-    .sidebar ul li.active, li.active hover {
-        opacity:1;
-        border-right:0;
-        background-color:#76393d;
+    /* Hides sidebar */
+    .sidebar {
+        display:none;    
     }
 }
 
@@ -77,7 +50,7 @@
 @media only screen and (max-width:640px) {
     
     /* =================== MENU =================== */
-    /* Menu margin between menu elements */
+    /* Stacks menu items */
     header ul li {
         display:block; 
         -webkit-transition: all .3s ease;
@@ -92,11 +65,21 @@
         background-color:transparent;
     }
 
-    header ul li:hover, li.active {
+    header ul li:hover {
         color:#ffffff;
         padding: .2em 0;
         background-color:#76393d;
     } 
+    
+    header ul li a.active {
+    color:#ffffff;
+    background-color:transparent;
+    }
+    
+    header ul li.active {
+        color:#ffffff;
+        background-color:#76393d;
+    }
     
     /* For the togglable menu bar */
     header.js {
@@ -106,6 +89,7 @@
     /* Makes the hamburger lines visible on small screens */
     #hamLines {
         display: inline;    
+        z-index:999;
     }
     
     header {
@@ -123,6 +107,16 @@
     #subText {
         display:none;
     }
+    
+    .artist-container, .activities-container {
+        width:90%;
+        padding:0 1em;
+    }
+    
+    .dropdown-container {
+        padding: 0 1em;    
+    }
+
     
     /* =================== DIAMOND SM =================== */
     /* Small diamond */
