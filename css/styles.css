@@ -59,6 +59,10 @@ a:hover {
     min-height:100%;
 }
 
+.window {
+    min-height:100%;
+}
+
 /* =================== FOOTER STYLES =================== */
 /* Places mountain range at the bottom of the page always. Content scrolls behind it. */
 footer {
@@ -156,7 +160,8 @@ header ul li a.active {
 /* =================== CUSTOM CLASSES FOR DIAMONDS & HOME PAGE STYLES =================== */
 /* Positions diamonds on front page */
 .diamond-container {
-    margin-top:7em;
+    position:relative;
+    top:10em;
     vertical-align:middle;
 }
 
@@ -311,10 +316,10 @@ header ul li a.active {
 /* =================== SPLITTER & SUBTEXT STYLES =================== */
 /* Compass splitter image */
 #splitter {
-    margin: .5em .5em 0em .5em;
-    z-index:1;
+    z-index:0;
     position:relative;
     top:0;
+    margin: -1em 0em;
 }
 
 /* Blurb of text below the text logo */
@@ -356,7 +361,7 @@ header ul li a.active {
 }
 
 .sidebar ul li:hover {
-    background-color:#76393d;
+    background-color:#1f1f1f;
 }
 
 .sidebar ul li a {
@@ -370,7 +375,7 @@ header ul li a.active {
 /* Sets styles for currently active tab/selected band */
 .sidebar ul li.active, li.active hover {
     opacity:1;
-    background-color:#76393d;
+    background-color:#1f1f1f;
 }
 
 /* Tab/band container */
@@ -453,4 +458,51 @@ header ul li a.active {
 }
 
 .window {
+}
+
+
+/* =================== FAQ STYLES =================== */
+
+.faq-container {
+    position:relative;
+    top:5.3em;
+    margin:auto;
+    width:55%;
+}
+
+.faq-title {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    width:100%;
+    color:#ffffff;
+    font-size:1.5em;
+    padding: .4em .5em;
+    background-color:#181818;
+    display:inline-block;
+    border-bottom:1px solid #232323;
+    box-sizing: border-box;
+}
+
+.faq-title:hover {
+    background-color:#1f1f1f;
+    color:#ffffff;
+}
+.faq-title.active {
+    color:#ffffff;
+    background-color:#1f1f1f;
+}
+
+.faq-content {
+    display:none;
+    width:100%;
+    padding: .75em;
+    background-color:#f5f5f5;
+    box-sizing: border-box;
+}
+
+.faq-content.open {
+    display:block;
 }

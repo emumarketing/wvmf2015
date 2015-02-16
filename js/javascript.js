@@ -21,7 +21,16 @@ if(img.length > 0){
 $("header").addClass("js");
 $("header").addClass("js").before('<div id="hamLines"><i class="fa fa-navicon"></i></div>');
 $("#hamLines").click(function() {
-    $("header").slideToggle();
+    $("header").slideToggle();    
+    
+    /* hides dropdown nav after a menu item has been clicked */ 
+    
+    if($(window).width() < 640) { 
+        $('#nav a').click(function() {
+            $("header").hide();
+            $("header").removeAttr("style");
+        });
+    }
 });
 
 $(window).resize(function(){
@@ -92,14 +101,38 @@ jQuery(document).ready(function() {
 });
 
 
+
+/* For FAQ accordion */
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.faq-container .faq-title').removeClass('active');
+        $('.faq-container .faq-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.faq-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.faq-container ' + currentAttrValue).slideDown(300).addClass('open');
+        }
+ 
+        e.preventDefault();
+    });
+});
+
 /* Enables smooth scrolling with anchor tags */
+
 function scrollNav() {
     $('#nav a').click(function() {
-        $("a.active").removeClass("active");      
-        $(this).closest('a').addClass("active");
-        var theClass = $(this).attr("class");
-        $('.'+theClass).parent('a').addClass('active');
-
+        
         $('html, body').stop().animate({
             scrollTop: $( $(this).attr('href') ).offset().top - 0 }, 400);
         
@@ -108,3 +141,29 @@ function scrollNav() {
     $('.scrollTop a').scrollTop();
 }
 scrollNav();
+
+
+/* For menu bar, makes 'active' when on the corresponding page */ 
+var sections = $('section')
+  , nav = $('#nav')
+  , nav_height = nav.outerHeight();
+ 
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+ 
+  sections.each(function() {
+    var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+ 
+    if (cur_pos >= top && cur_pos <= bottom) {
+      $("#nav").find('li a').removeClass('active');
+      sections.removeClass('active');
+ 
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    
+    }
+
+  });
+    
+});

@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     
+<!-- For scrollsnap js -->
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/jquery.windows.js"></script>
+    
 </head>
 
 <header>
@@ -23,7 +28,7 @@
 <body>
     
     <!-- ///////////HOME PAGE/////////// -->
-    <section id="home-page">
+    <section id="home-page" class="window">
     <div align="center" class="diamond-container">
         <div class="diamond-md" id="date"><div>May 9<br>
             <span class="subText">FREE ADMISSION</span>
@@ -41,15 +46,15 @@
         <div class="diamond-md" id="date-sm"><div>May 9</div></div>
         <div class="diamond-md" id="time-sm"><div>12pm to 1am</div></div>
         <div class="diamond-md" id="admit-sm"><div>Free Admission</div></div>
-    </div>
+    
 
-    <div align="center"><img src="images/splitter.png" id="splitter">
-    </div>
-    <div align="center">
-        <div class="diamond-sm"><div><a href=""><i class="fa fa-facebook"></i></a></div></div>
-        <div class="diamond-sm"><div><a href=""><i class="fa fa-twitter"></i></a></div></div>
-        <div class="diamond-sm"><div><a href=""><i class="fa fa-instagram"></i></a></div></div>
-    </div>
+        <p><img src="images/splitter.png" id="splitter"></p>
+    
+        <div class="diamond-sm"><div><a href="https://www.facebook.com/UOWVMF"><i class="fa fa-facebook"></i></a></div></div>
+        <div class="diamond-sm"><div><a href="https://twitter.com/wvmusicfest"><i class="fa fa-twitter"></i></a></div></div>
+        <div class="diamond-sm"><div><a href="http://instagram.com/wvmusicfest"><i class="fa fa-instagram"></i></a></div></div>
+ 
+        </div>
     </section>
     
     <!-- ///////////ARTISTS PAGE/////////// -->
@@ -60,9 +65,9 @@
                 <select id="artist-form">
                     <option value="#artist1">Aaron Jackson</option>
                     <option value="#artist2">Lures</option>
-                    <option value="#artist3">Sugarbeats</option>
-                    <option value="#artist4">artist4</option>
-                    <option value="#artist5">artist5</option>
+                    <option value="#artist3">SugarBeats</option>
+                    <option value="#artist4">Crater</option>
+                    <option value="#artist5">Tony Glausi Quintet</option>
                     <option value="#artist6">artist6</option>
                     <option value="#artist7">artist7</option>
                     <option value="#artist8">artist8</option>
@@ -76,9 +81,9 @@
             <ul>
                 <li class="active"><a href="#artist1">Aaron Jackson</a></li>
                 <li><a href="#artist2">Lures</a></li>
-                <li><a href="#artist3">Sugarbeats</a></li>
-                <li><a href="#artist4">Artist 4</a></li>
-                <li><a href="#artist5">Artist 5</a></li>
+                <li><a href="#artist3">SugarBeats</a></li>
+                <li><a href="#artist4">Crater</a></li>
+                <li><a href="#artist5">Tony Glausi Quintet</a></li>
                 <li><a href="#artist6">Artist 6</a></li>
                 <li><a href="#artist7">Artist 7</a></li>
                 <li><a href="#artist8">Artist 8</a></li>
@@ -108,7 +113,7 @@
             <div id="artist2" class="artist">
             <img src="images/lures.png">
             <div class="title">Lures</div>
-            <p> "dark and surfy like a David Lynch soundtrack." - brooklyn vegan </p>
+            <p> "Dark and surfy like a David Lynch soundtrack." - Brooklyn Vegan </p>
             <div class="artist-links"> 
                 <a href="http://luresmusic.com"><i class="fa fa-home"></i></a>
                 <a href="https://www.facebook.com/pages/Lures/216887315091232"><i class="fa fa-facebook-square"></i></a>   
@@ -118,7 +123,7 @@
             <!-- ...........ARTIST 3........... -->
             <div id="artist3" class="artist">
             <img src="images/sugarbeats.png">
-            <div class="title">Sugarbeats</div>
+            <div class="title">SugarBeats</div>
             <p>Known for their jazzy chords, funky leads, heavy bass, and a healthy dose of traditional instrumentation, the duo SugarBeats... has steadily stepped up the bar in their own brand of Glitch Hop and Future Funk since they launched in 2012. Their newest EP "Groove City Romance" takes it to a whole new level, featuring five different vocalists, two guitarists, one violinist, and a healthy dose of saxophone, as well as production quality rarely matched in the EDM scene. They have rocked stages at some of the biggest sound camps at Burning Man, played festivals such as What The Festival, Kaleidoscope Music Festival, as well as won contests to play the Main Stage at SnowGlobe and Escape from Wonderland with Insomniac Events, respectively.</p>
                 <p>Artists they have shared the stage with include Opiuo, The Glitch Mob, Major Laser, Gramatik, RJD2, The Floozies, Cut Copy, ill.Gates, Pantyraid, Thriftworks, Vibesquad, Love & Light, Snoop Dog, Zion I and many more. After years of experimentation they have finally uncovered a sound that is truly their own, which they continue to perfect and explore with each release as they dive deeper and deeper into collaborations with new vocalists, instrumentalists and producers.</p>
             <div class="artist-links"> 
@@ -131,27 +136,26 @@
             
              <!-- ...........ARTIST 4........... -->
             <div id="artist4" class="artist">
-            <img src="http://placehold.it/1000x200">
-            <div class="title">Title4</div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <img src="images/crater.png">
+            <div class="title">Crater</div>
+            <p>
+                "Romantically ominous (or maybe ominously romantic), industrial-leaning
+electro-pop." - Gorilla Vs. Bear </p>
             <div class="artist-links"> 
-                <a href="">link1</a> 
-                <a href="">link1</a>  
-                <a href="">link1</a>
+                <a href="http://craterbabes.com"><i class="fa fa-home"></i></a>
+                <a href="https://soundcloud.com/crater/tracks"><i class="fa fa-soundcloud"></i></a> 
+                <a href="http://twitter.com/craterbabes"><i class="fa fa-twitter"></i></a>  
+                <a href="http://facebook.com/craterbabes"><i class="fa fa-facebook-square"></i></a>
             </div>
             </div>
             
              <!-- ...........ARTIST 5........... -->
             <div id="artist5" class="artist">
-            <img src="http://placehold.it/1000x200">
-            <div class="title">Title5</div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br><br>
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            <img src="images/tgq.png">
+            <div class="title">Tony Glausi Quintet</div>
+            <p>Tony Glausi is an award-winning trumpet player and composer. His quintet is made up of current or past UO students, namely Josh Hettwer on saxophone, Torrey Newhart on piano, Sean Peterson on bass, and Adam Carlson on drums. This band plays original music of all styles, with an emphasis on modern jazz.  </p>
             <div class="artist-links"> 
-                <a href="">link1</a> 
-                <a href="">link1</a>  
-                <a href="">link1</a>
+                <a href="www.reverbnation.com/tonyglausi "><i class="fa fa-home"></i></a> 
             </div>
             </div>
             
@@ -262,7 +266,7 @@
         </div>
             
             <div class="activities-container">
-            <!-- ...........ARTIST 1........... -->
+            <!-- ...........ACTIVITIES 1........... -->
             <div id="artist1" class="artist active">
             <img src="http://placehold.it/1000x200">
             <div class="title">Title1</div>
@@ -275,7 +279,7 @@
             </div>
             </div>
             
-            <!-- ...........ARTIST 2........... -->
+            <!-- ...........ACTIVITIES 2........... -->
             <div id="artist2" class="artist">
             <img src="http://placehold.it/1000x200">
             <div class="title">Title2</div>
@@ -288,7 +292,7 @@
             </div>
             </div>
             
-            <!-- ...........ARTIST 3........... -->
+            <!-- ...........ACTIVITIES 3........... -->
             <div id="artist3" class="artist">
             <img src="http://placehold.it/1000x200">
             <div class="title">Title3</div>
@@ -301,7 +305,7 @@
             </div>
             </div>
             
-             <!-- ...........ARTIST 4........... -->
+             <!-- ...........ACTIVITIES 4........... -->
             <div id="artist4" class="artist">
             <img src="http://placehold.it/1000x200">
             <div class="title">Title4</div>
@@ -314,7 +318,7 @@
             </div>
             </div>
             
-             <!-- ...........ARTIST 5........... -->
+             <!-- ...........ACTIVITIES 5........... -->
             <div id="artist5" class="artist">
             <img src="http://placehold.it/1000x200">
             <div class="title">Title5</div>
@@ -329,7 +333,7 @@
             </div><!-- End artists container -->
         </section>
     
-    <section id="video-page">
+    <section id="video-page" class="window">
         <div id="video-page-container">
                 <div class="video-container">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/5WI9vqsxu7E" frameborder="0" allowfullscreen></iframe>
@@ -338,14 +342,72 @@
         </div>
     </section>
     
-    <section id="schedule-page">
+    <section id="schedule-page" class="window">
     schedule page
     </section>
     
-    <section id="faq-page">
-    faq page
+    <section id="faq-page" class="window">
+        
+        <div class="faq-container">
+            <div class="faq-section">
+                <a class="faq-title" href="#faq1">What is the Willamette Valley Music Festival all about?</a>
+                
+                <div id="faq1" class="faq-content">
+                    The  Willamette  Valley  Music  Festival  is  an  all  day,  multi-stage  festival  that  takes  place  on  The   University  of  Oregon  campus.  This  festival  is  open  to  all  ages  and  is  free  to  both  students   and  the  surrounding  community.   
+                </div>
+               
+            </div>
+            
+            <div class="faq-section">
+                <a class="faq-title" href="#faq2">When does the event take place?</a>
+                
+                <div id="faq2" class="faq-content">
+                    Saturday, May 9th, 2015 from 12pm-1am 
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <a class="faq-title" href="#faq3">Who will be playing the festival?</a>
+                
+                <div id="faq3" class="faq-content">
+                    There will be 14 musical acts ranging from indie rock to bass house music. Check out the artist page for more details! 
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <a class="faq-title" href="#faq4">What other performances will be at the festival?</a>
+                
+                <div id="faq4" class="faq-content">
+                    There will be several workshops open to the public, including swing dancing, screen printing, hula hooping, poi, and a fire dancing performance! 
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <a class="faq-title" href="#faq5">Will there be food  and beverages at the festival?</a>
+                
+                <div id="faq5" class="faq-content">
+                    Yes, the ASUO Street Faire will be on campus all day Saturday during the festival. We will also have water refill stations placed on campus. No outside alcohol will be allowed. 
+                </div>
+            </div>
+
+        </div>
     </section>
     
+    <script>
+        /* Script for scrollsnapping */
+        $(document).ready(function(){
+            //window.js component
+            var $windows = $('.window');
+            $windows.windows({
+                snapping: true,
+                snapSpeed: 500,
+                snapInterval: 1000,
+                onScroll: function(s){},
+                onSnapComplete: function($el){},
+                onWindowEnter: function($el){}
+                });
+        });
+    </script>
 </body>
     
 <footer><img src="images/mountains.png" id="mountains"></footer>
