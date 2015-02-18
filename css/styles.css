@@ -106,8 +106,8 @@ header {
     position: fixed;
     top:0;
     width:100%;
-    padding: .2em 0;
     z-index:999;
+    display:block;
 }
 
 /* Menu elements */
@@ -133,6 +133,8 @@ header ul li a {
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+    height:100%;
+    display:inline-block;
 }
 
 header ul li a:hover {
@@ -157,14 +159,40 @@ header ul li a.active {
     display:none;
 }
 
+/* uo signature */
+.uo-sig img {
+    display:inline-block;
+    max-height:30px;
+    position:absolute;
+    left:.5em;
+    top: .15em;
+}
+
 /* =================== CUSTOM CLASSES FOR DIAMONDS & HOME PAGE STYLES =================== */
+
+/* for "cultural forum presents" text on home page */
+.cf-presents a {
+    font-family: yanone kaffeesatz;
+    font-size:1.3em;
+    color:#ffffff;
+    font-weight:200;
+    padding-bottom:.5em;
+    border-bottom:1px solid #ffffff;
+    display:inline-block;
+    margin-bottom:3.5em;
+}
+
+.cf-presents a:hover {
+    color:#76393d;
+}
+
 /* Positions diamonds on front page */
 .diamond-container {
     position:relative;
-    top:10em;
+    top:4em;
     vertical-align:middle;
+    display:block;
 }
-
 
 /* Large diamond */
 .diamond-lg {
@@ -418,6 +446,12 @@ header ul li a.active {
     font-size:1.5em;
     text-align:right;
     margin-top:1em;
+}
+
+.artist-content {
+    height:50%;
+    background-color:#ffffff;
+    overflow:auto;
 }
 
 /* Fontawesome icons within artist/activities containers */

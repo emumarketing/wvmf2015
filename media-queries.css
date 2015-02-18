@@ -26,6 +26,10 @@
         font-size:1.3em;
         padding:.7em;
     }
+
+    .cf-presents a {
+        font-size:1.1em;    
+    }
     
     /* =================== ARTIST/ACTIVITIES PAGE =================== */
     
@@ -123,6 +127,10 @@
         padding: 0 1em;    
     }
 
+    .cf-presents a {
+        font-size:1.1em;  
+        margin-bottom:.5em;
+    }
     
     /* =================== DIAMOND SM =================== */
     /* Small diamond */
