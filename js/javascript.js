@@ -19,13 +19,13 @@ if(img.length > 0){
 
 /* Makes hamburger lines in place of menu bar when window is resized */
 $("header").addClass("js");
-$("header").addClass("js").before('<div id="hamLines"><i class="fa fa-navicon"></i></div>');
-$("#hamLines").click(function() {
+$("header").addClass("js").before('<div id="hamLines"><div class="uo-sig"><a href="http://uoregon.edu"><img src="images/uosignature.png"></a></div><i class="fa fa-navicon"></i></div>');
+$("#hamLines .fa").click(function() {
     $("header").slideToggle();    
     
     /* hides dropdown nav after a menu item has been clicked */ 
     
-    if($(window).width() < 640) { 
+    if($(window).width() < 900) { 
         $('#nav a').click(function() {
             $("header").hide();
             $("header").removeAttr("style");
@@ -52,6 +52,7 @@ jQuery(document).ready(function() {
         jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
         
         e.preventDefault();
+
     });
 });
 

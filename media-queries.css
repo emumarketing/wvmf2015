@@ -1,11 +1,65 @@
+
+
 /*** =================== 900px =================== ***/
 @media only screen and (max-width:900px) {
 
     /* =================== MENU =================== */
-    /* Menu margin between menu elements */
-    #nav a {
-        padding: .2em .8em;
+    /* Stacks menu items */
+    header ul li {
+        display:block; 
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        padding: .2em 0;
     }
+    
+    header ul li a:hover {
+        background-color:transparent;
+    }
+
+    header ul li:hover {
+        color:#ffffff;
+        padding: .2em 0;
+        background-color:#76393d;
+    } 
+    
+    header ul li a.active {
+    color:#ffffff;
+    background-color:transparent;
+    }
+    
+    header ul li.active {
+        color:#ffffff;
+        background-color:#76393d;
+    }
+    
+    /* For the togglable menu bar */
+    header.js {
+        display:none;
+    }
+    
+    /* Makes the hamburger lines visible on small screens */
+    #hamLines {
+        display: inline;    
+        z-index:999;
+    }
+    
+    header {
+        margin-top:1.5em;
+        font-size:2em;
+    }
+    
+    .uo-sig img {
+        left: .4em;
+        top: .14em;
+    }
+    
+    header .uo-sig img {
+        display:none;
+    }
+
     
     /* =================== DIAMOND LG =================== */
     /* Large diamond */
@@ -59,52 +113,9 @@
 /*** =================== 640px =================== ***/
 @media only screen and (max-width:640px) {
     
-    /* =================== MENU =================== */
-    /* Stacks menu items */
-    header ul li {
-        display:block; 
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
-        padding: .2em 0;
-    }
-    
-    header ul li a:hover {
-        background-color:transparent;
-    }
-
-    header ul li:hover {
-        color:#ffffff;
-        padding: .2em 0;
-        background-color:#76393d;
-    } 
-    
-    header ul li a.active {
-    color:#ffffff;
-    background-color:transparent;
-    }
-    
-    header ul li.active {
-        color:#ffffff;
-        background-color:#76393d;
-    }
-    
-    /* For the togglable menu bar */
-    header.js {
-        display:none;
-    }
-    
-    /* Makes the hamburger lines visible on small screens */
-    #hamLines {
-        display: inline;    
-        z-index:999;
-    }
-    
-    header {
-        margin-top:2em;
-        font-size:2em;
+    /* makes artist content longer */
+    .artist-content {
+        height:55%;
     }
     
     /* =================== MISC =================== */
