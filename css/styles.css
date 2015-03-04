@@ -34,12 +34,17 @@ a:hover {
     color:#181818;
 }
 
+
 /* =================== INDIVIDUAL PAGE STYLES =================== */
 #home-page, #artists-page, #activities-page, #video-page, #schedule-page, #faq-page {
     height:100%;
 }
 .window {
     min-height:100%;
+}
+
+#faq-page {
+    margin-bottom:200px;
 }
 
 /* =================== FOOTER STYLES =================== */
@@ -137,7 +142,6 @@ header ul li a.active {
     right:0em;
     width:100%;
     text-align:right;
-    display:none;
 }
 
 #hamLines .fa {
@@ -525,4 +529,12 @@ header ul li a.active {
 
 .faq-content.open {
     display:block;
+}
+
+.faq-content p {
+    margin-left:1em;
+}
+
+.faq-content a {
+    font-family:arial;
 }
