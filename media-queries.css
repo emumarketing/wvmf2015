@@ -56,10 +56,14 @@
         top: .14em;
     }
     
+    /* moves the ssc logo to a new row */
     header .uo-sig img {
         display:none;
     }
 
+    .sponsors .line3 {
+        display:block;
+}
     
     /* =================== DIAMOND LG =================== */
     /* Large diamond */
@@ -141,6 +145,10 @@
     .cf-presents a {
         font-size:1.1em;  
         margin-bottom:.5em;
+    }
+    
+    .sponsors .line2 {
+        display:block;
     }
     
     /* =================== DIAMOND SM =================== */
