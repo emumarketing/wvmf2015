@@ -492,12 +492,16 @@ header ul li a.active {
 }
 
 .video-container {
-    border:2px solid #ffffff;
-    padding:.5em;
-    display:inline-block;
+    position:relative;
+    max-width:640px;
+    margin:auto;
 }
 
-.window {
+.video-container iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 
