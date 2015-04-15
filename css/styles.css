@@ -44,7 +44,7 @@ a:hover {
 }
 
 #faq-page {
-    margin-bottom:200px;
+    height:130%;
 }
 
 /* =================== FOOTER STYLES =================== */
@@ -124,7 +124,7 @@ header ul li {
     display:inline-block;
 }
 
-header ul li a {
+header ul a {
     color:#ffffff;
     text-decoration:none;
     padding: .2em .8em;
@@ -137,12 +137,12 @@ header ul li a {
     display:inline-block;
 }
 
-header ul li a:hover {
+header ul a:hover {
     color:#ffffff;
     background-color:#76393d;
 } 
 
-header ul li a.active {
+header ul a.active {
     color:#ffffff;
     background-color:#76393d;
 }

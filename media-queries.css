@@ -5,7 +5,7 @@
 
     /* =================== MENU =================== */
     /* Stacks menu items */
-    header ul li {
+    header ul a {
         display:block; 
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
@@ -15,24 +15,13 @@
         padding: .2em 0;
     }
     
-    header ul li a:hover {
-        background-color:transparent;
-    }
-
-    header ul li:hover {
-        color:#ffffff;
-        padding: .2em 0;
+    header ul a:hover {
         background-color:#76393d;
-    } 
+    }
     
-    header ul li a.active {
+    header ul a.active {
     color:#ffffff;
-    background-color:transparent;
-    }
-    
-    header ul li.active {
-        color:#ffffff;
-        background-color:#76393d;
+    background-color:#76393d;
     }
     
     /* For the togglable menu bar */
@@ -47,8 +36,8 @@
     }
     
     header {
-        margin-top:1.5em;
-        font-size:2em;
+        margin-top:1.15em;
+        font-size:2em; 
     }
     
     .uo-sig img {
@@ -149,6 +138,10 @@
     
     .sponsors .line2 {
         display:block;
+    }
+    
+    #faq-page { 
+        height:150%!important;
     }
     
     /* =================== DIAMOND SM =================== */

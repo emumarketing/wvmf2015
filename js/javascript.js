@@ -157,7 +157,7 @@ $(window).on('scroll', function () {
         bottom = top + $(this).outerHeight();
  
     if (cur_pos >= top && cur_pos <= bottom) {
-      $("#nav").find('li a').removeClass('active');
+      $("#nav").find('a').removeClass('active');
       sections.removeClass('active');
  
       $(this).addClass('active');
