@@ -47,6 +47,8 @@ a:hover {
     height:130%;
 }
 
+
+
 /* =================== FOOTER STYLES =================== */
 /* Places mountain range at the bottom of the page always. Content scrolls behind it. */
 footer {
@@ -460,6 +462,12 @@ header ul a.active {
     height:45%;
     overflow:scroll;
 }
+
+/* For beer and wine garden page */
+#activities-page .artist-content {
+    height:80%;
+}
+
 
 /* Fontawesome icons within artist/activities containers */
 .artist-links .fa {
