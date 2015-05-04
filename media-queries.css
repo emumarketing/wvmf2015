@@ -52,8 +52,11 @@
 
     .sponsors .line3 {
         display:block;
-}
+    }
     
+    .sponsors .line2 {
+        display:block;
+    }
     /* =================== DIAMOND LG =================== */
     /* Large diamond */
     .diamond-lg {
@@ -103,6 +106,8 @@
     }
 }
 
+
+
 /*** =================== 640px =================== ***/
 @media only screen and (max-width:640px) {
     
@@ -136,13 +141,14 @@
         margin-bottom:.5em;
     }
     
-    .sponsors .line2 {
-        display:block;
-    }
-    
     #faq-page { 
         height:150%!important;
     }
+    
+    .sponsors .line4 {
+        display:block;
+    }
+    
     
     /* =================== DIAMOND SM =================== */
     /* Small diamond */
