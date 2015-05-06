@@ -90,8 +90,12 @@
     
     
     /* Shows dropdown form */
-    #artist-form, #activities-form {
+    #artist-form, #activities-form, #schedule-form {
         display:inline-block;
+    }
+    
+    .schedule-nav {
+        display:none;    
     }
     
     /* Hides sidebar */
@@ -247,4 +251,18 @@
         display:block;
     }
 
+    /* =================== SCHEDULE PAGE =================== */
+    .schedule-nav li {
+        display:block;
+        height:auto;
+    }
+    
+    .schedule-nav a li {
+        font-size:16px;
+    }
+    
+    .schedule-container {
+        width:90%;
+        padding:0 1em;
+    }
 }

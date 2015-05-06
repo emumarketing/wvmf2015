@@ -47,7 +47,9 @@ a:hover {
     height:130%;
 }
 
-
+#schedule-page {
+    text-align:center;
+}
 
 /* =================== FOOTER STYLES =================== */
 /* Places mountain range at the bottom of the page always. Content scrolls behind it. */
@@ -359,11 +361,13 @@ header ul a.active {
 }
 
 /* Blurb of text below the text logo */
-/*.subText {
-    text-align: justify;
-    width:70%;
-    font-size: .9em;
-}*/
+.subText {
+    font-family: yanone kaffeesatz;
+    color:#76393d;
+    font-size: 1.7em;
+    font-weight:normal;
+    text-transform:uppercase;
+}
 
 /* =================== ARTISTS PAGE STYLES =================== */
 
@@ -416,7 +420,7 @@ header ul a.active {
 
 /* Tab/band container */
 /* Two classes to differentiate which 'tabs' the jquery is calling */ 
-.artist-container, .activities-container {
+.artist-container, .activities-container, .schedule-container {
     position:relative;
     top:5.3em;
     width:55%;
@@ -483,7 +487,7 @@ header ul a.active {
     padding: 0 2em;
 }
 
-#artist-form, #activities-form {
+#artist-form, #activities-form, #schedule-form {
     width:100%;
     text-align:right;
     font-size:1em;
@@ -491,6 +495,94 @@ header ul a.active {
     margin-bottom:1em;
 }
 
+
+/* =================== SCHEDULE PAGE STYLES =================== */
+
+.schedule-nav {
+    position:relative;
+    top:5em;
+    vertical-align:top;
+}
+
+.schedule-nav ul {
+    padding:0;
+}
+
+.schedule-nav li {
+    list-style-type:none;
+    display:inline-block;
+    background:#181818;
+    padding: 5px 10px;
+    margin: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    height:50px;
+    vertical-align:top;
+}
+
+.schedule-nav li.active {
+    background:#76393D;
+}
+
+.schedule-nav a li:hover {
+    background:#76393D;
+}
+
+.schedule-nav a li {
+    font-family: source sans pro;
+    font-weight:bold;
+    font-size:18px;
+    text-transform:uppercase;
+}
+
+.schedule-nav li span {
+    font-family:yanone kaffeesatz;
+    font-weight:200;
+}
+
+.schedule-nav li:hover {
+    background:#1f1f1f;
+}
+
+.schedule-nav a {
+    color:#ffffff!important;
+}
+
+.schedule-container {
+    width:700px;
+}
+
+.schedule-content {
+    height:70%;
+    overflow:scroll;
+    text-align:left;
+}
+
+.schedule-time {
+    background:#fff;
+    font-family: source sans pro;
+    font-size:18px;
+    width:150px;
+    text-transform:uppercase;
+    padding: 3px 6px;
+    color:#76393D;
+    margin-right: 10px;
+    display:inline-block;
+    text-align:right;
+}
+
+.schedule-row {
+    border-bottom:1px dashed #FFF;
+    width:100%;
+    font-family:yanone kaffeesatz;
+    font-weight:bold;
+    font-size:20px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
 
 /* =================== VIDEO PAGE STYLES =================== */
 /* Positions page content */

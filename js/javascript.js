@@ -63,12 +63,45 @@ jQuery(document).ready(function() {
         //get value of tab link
         var currentAttrValue = jQuery(this).attr('href');
         
-        jQuery('.activities-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+        jQuery('.schedule-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
         
         //change/remove current tab to active
         jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
         
         e.preventDefault();
+    });
+});
+
+
+/* Enables tab features for schedule page */
+jQuery(document).ready(function() {
+
+    jQuery('#schedule-sidebar a').on('click', function(e) {
+        //get value of tab link
+        var currentAttrValue = jQuery(this).attr('href');
+        
+        jQuery('.schedule-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+        
+        //change/remove current tab to active
+        jQuery(this).children('li').addClass('active');
+        jQuery(this).siblings().children('li').removeClass('active');
+        
+        e.preventDefault();
+    });
+});
+
+
+/* Enables tab features for schedule via dropdown menu */
+jQuery(document).ready(function() {
+
+    jQuery('#schedule-form').on('change', function() {
+        //console.log("changed");
+        //get value of tab link
+        var currentAttrValue = $("#schedule-form").val();
+        //console.log(currentAttrValue);
+        
+        jQuery('.schedule-container ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
     });
 });
 
