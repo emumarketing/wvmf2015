@@ -1,4 +1,109 @@
+/*** =================== 1065px =================== ***/
+@media only screen and (max-width:1065px) {
+    
+#splitter {
+        display: none;
+    }
 
+    /* =================== DIAMOND SM =================== */
+    /* Small diamond */
+    .diamond-sm {
+        width: 30px;
+        height: 30px;
+        border: 0px;
+        background-color: transparent;
+        padding:0em;
+        margin:0px 1em;
+    }
+
+    .diamond-sm div a {
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .diamond-sm:hover {
+        background-color:transparent;
+    }
+    
+    .diamond-sm div a:hover {
+        color:#181818;
+    }
+
+
+    /* =================== DATE/TIME INFO =================== */
+    /* Hides the old date/time info viewed on larger screens */
+    #date {
+        display:none;    
+    }
+    
+    #time {
+        display:none;
+    }
+    
+    /* Makes the new date/time info visible on smaller screens */
+    #date-sm {
+        display:block;
+    }
+
+    #time-sm {
+        display:block;
+    }
+
+    #admit-sm {
+        display:block;
+    }
+    
+    
+    /* =================== DIAMOND MD =================== */
+    /* Medium diamonds turned into rectangles. Applied to the date/time info */
+    .diamond-md {
+        width: 500px;
+        height:100%;
+        border: 2px solid #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+        -ms-transform: rotate(0); /* IE 9 */
+        -webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+        transform: rotate(0);
+        z-index:-1;
+        margin-top:.5em;
+    }
+
+    .diamond-md div {
+        position:relative;
+        right:0;
+        top:0;
+        height:100%;
+        width:100%;
+        -ms-transform: rotate(0); /* IE 9 */
+        -webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+        transform: rotate(0);
+        font-family: yanone kaffeesatz;
+        color:#76393d;
+        text-transform: none;
+        font-weight: normal;
+        font-size:1.7em;
+        padding:.1em;
+    }
+    
+    /* Margin between the text logo and the top of the screen */
+    .diamond-container {
+        margin-top:3.5em;
+    }
+    
+    
+    /* =================== DIAMOND LG =================== */
+    .diamond-lg {
+        border:0;
+        background-color:transparent;
+    }
+    
+    .cf-presents a {
+        margin-bottom: 1em;
+    }
+} 
 
 /*** =================== 900px =================== ***/
 @media only screen and (max-width:900px) {
@@ -57,68 +162,13 @@
     .sponsors .line2 {
         display:block;
     }
-    /* =================== DIAMOND LG =================== */
-    /* Large diamond */
-    .diamond-lg {
-        width: 200px;
-        height:200px;
-        margin: 0 6em;
-        font-size:75%;
-    }
 
-    /* Medium diamond */
-    .diamond-md {
-        width: 120px;
-        height:120px;
-    }
 
-    .diamond-md div {
-        font-size:1.3em;
-        padding:.7em;
-    }
-
-    .cf-presents a {
-        font-size:1.1em;    
-    }
-    
-    /* =================== ARTIST/ACTIVITIES PAGE =================== */
-    
-    .artist-container, .activities-container {
-        width:90%;    
-        text-align:left;
-    }
-    
-    
-    /* Shows dropdown form */
-    #artist-form, #activities-form, #schedule-form {
-        display:inline-block;
-    }
-    
-    .schedule-nav {
-        display:none;    
-    }
-    
-    /* Hides sidebar */
-    .sidebar {
-        display:none;    
-    }
-    
-    /* =================== FAQ PAGE =================== */
-    
-    .faq-container {
-        width:90%;
-    }
 }
-
 
 
 /*** =================== 640px =================== ***/
 @media only screen and (max-width:640px) {
-    
-    /* makes artist content longer */
-    .artist-content {
-        height:55%;
-    }
     
     /* =================== MISC =================== */
     /* Hides the splitter */
@@ -131,66 +181,9 @@
         display:none;
     }
     
-    .artist-container, .activities-container {
-        width:90%;
-        padding:0 1em;
-    }
-    
-    .dropdown-container {
-        padding: 0 1em;    
-    }
-
-    .cf-presents a {
-        font-size:1.1em;  
-        margin-bottom:.5em;
-    }
-    
-    #faq-page { 
-        height:150%!important;
-    }
-    
-    .sponsors .line4 {
-        display:block;
-    }
-    
-    
-    /* =================== DIAMOND SM =================== */
-    /* Small diamond */
-    .diamond-sm {
-        width: 30px;
-        height: 30px;
-        border: 0px;
-        background-color: transparent;
-        padding:0em;
-    }
-
-    .diamond-sm div a {
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
-    }
-
-    .diamond-sm:hover {
-        background-color:transparent;
-    }
-    
-    .diamond-sm div a:hover {
-        color:#181818;
-    }
-    
-    /* =================== DIAMOND LG =================== */
-    /* Large diamond */
     .diamond-lg {
-        width: 200px;
-        height:200px;
-        border: 0px;
-        background-color: transparent;
-        margin: 0;
-        z-index:-1;
-        font-size:75%;
-    }  
+        margin:0;
+    }
     
     /* =================== DIAMOND MD =================== */
     /* Medium diamonds turned into rectangles. Applied to the date/time info */
@@ -228,41 +221,4 @@
         margin-top:3.5em;
     }
     
-    /* =================== DATE/TIME INFO =================== */
-    /* Hides the old date/time info viewed on larger screens */
-    #date {
-        display:none;    
-    }
-    
-    #time {
-        display:none;
-    }
-    
-    /* Makes the new date/time info visible on smaller screens */
-    #date-sm {
-        display:block;
-    }
-
-    #time-sm {
-        display:block;
-    }
-
-    #admit-sm {
-        display:block;
-    }
-
-    /* =================== SCHEDULE PAGE =================== */
-    .schedule-nav li {
-        display:block;
-        height:auto;
-    }
-    
-    .schedule-nav a li {
-        font-size:16px;
-    }
-    
-    .schedule-container {
-        width:90%;
-        padding:0 1em;
-    }
 }
